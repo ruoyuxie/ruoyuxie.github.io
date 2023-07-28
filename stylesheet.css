@@ -133,3 +133,21 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
+/*body {*/
+/*   transform: scale(1.2);*/
+/*   transform-origin: 0 0;*/
+/*   overflow-x:hidden;*/
+/*}*/
+body {
+  transform: scale(1.17);
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+transform-origin: center;
+overflow-x:hidden;
+}
+
+li:not(:last-child) {
+    margin-bottom: 2px;
+}
