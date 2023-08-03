@@ -140,7 +140,7 @@ span.highlight {
 /*   overflow-x:hidden;*/
 /*}*/
 body {
-  transform: scale(1.1);
+  /*transform: scale(1);*/
   justify-content: center;
   align-items: center;
   height: 5vh;
