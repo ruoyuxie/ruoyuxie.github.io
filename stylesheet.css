@@ -151,3 +151,55 @@ overflow-x:hidden;
 li:not(:last-child) {
     margin-bottom: 2px;
 }
+
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 15px; /* Increased from 14px */
+}
+
+strong {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 15px; /* Increased from 14px */
+}
+
+h2 {
+  margin: 0;
+  font-weight: normal;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 23px; /* Increased from 22px */
+}
+
+.papertitle {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 15px; /* Increased from 14px, adjust as needed */
+  font-weight: 700;
+}
+
+.name {
+  padding-top: 20px;
+  margin: 0;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 33px; /* Increased from 32px */
+}
+.social-link {
+    /*color: rgba(0,4,15,0.78); !* Set the color to black *!*/
+    text-decoration: none; /* Optional: removes underline from links */
+}
+
+.social-link:hover {
+    text-decoration: underline; /* Optional: underline on hover for better UX */
+}
+
+.social-link .fa {
+    font-size: 14px; /* Adjust the size as needed */
+}
+
+.social-link span {
+    margin-left: 5px; /* Space between icon and text */
+    font-size: 14px; /* Adjust the size as needed */
+}
