@@ -93,12 +93,12 @@ strong {
 h2 {
   margin: 0;
   font-weight: normal;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: '-apple-system', Verdana, Helvetica, sans-serif;
   font-size: 22px;
 }
 
 .papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: '-apple-system', Verdana, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 700;
 }
@@ -106,7 +106,7 @@ h2 {
 .name {
   padding-top: 20px;
   margin: 0;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: '-apple-system', Verdana, Helvetica, sans-serif;
   font-size: 32px;
 }
 
@@ -291,7 +291,54 @@ table {
     margin-bottom: 8px;
   font-weight: bold;
 
+
+}
+.name-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
 }
 
+.name {
+    margin: 0;
+    font-weight: bold;
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 37px;
+}
 
+.name-image {
+    vertical-align: middle;
+    margin-left: -5px;
+    width: 100px;
+    height: 40px;
+}
 
+.subtitle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.subtitle {
+    margin: 2px 0;
+}
+
+.university {
+  /*margin-left: -100px;*/
+    font-size: 17px;
+    color: #333;
+    font-weight: bold;
+}
+
+.email {
+    font-family: '-apple-system';
+  /*margin-left: -90px;*/
+
+    font-size: 16px;
+    color: #666;
+    /*font-style: italic;*/
+}
