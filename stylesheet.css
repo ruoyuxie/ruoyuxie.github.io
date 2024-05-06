@@ -74,6 +74,7 @@ a:hover {
   text-decoration: none;
 }
 
+
 body,
 td,
 th,
@@ -176,7 +177,7 @@ h2 {
 
 .papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 15px; /* Increased from 14px, adjust as needed */
+  font-size: 21px; /* Increased from 14px, adjust as needed */
   font-weight: 700;
 }
 
@@ -196,10 +197,101 @@ h2 {
 }
 
 .social-link .fa {
-    font-size: 14px; /* Adjust the size as needed */
+    font-size: 18px; /* Adjust the size as needed */
+}
+.social-link .fab {
+    font-size: 18px; /* Adjust the size as needed */
 }
 
 .social-link span {
     margin-left: 5px; /* Space between icon and text */
-    font-size: 14px; /* Adjust the size as needed */
+    font-size: 18px; /* Adjust the size as needed */
 }
+
+
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+}
+
+strong {
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  color: #282828;
+  font-weight: bold;
+}
+
+h2 {
+  margin: 0;
+  font-weight: bold;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 25px; /* Increased from 22px */
+}
+
+.papertitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.name {
+  padding-top: 20px;
+  margin: 0;
+  font-weight: bold;
+
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 37px; /* Increased from 32px */
+}
+
+
+table {
+  border-collapse: collapse;
+  margin-bottom: -20px;
+}
+
+
+.publication-entry {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Adjust this value to set the vertical spacing between entries */
+  margin-top: 20px;
+}
+
+.publication-image {
+  width: 180px; /* Adjust this value to set the width of the image */
+  height: auto;
+  margin-right: 50px; /* Adjust this value to set the spacing between the image and text */
+  margin-left: 25px; /* Adjust this value to set the spacing between the image and text */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.publication-title {
+  font-size: 17px; /* Adjust this value to set the font size of the publication title */
+  font-weight: bold;
+}
+
+.publication-authors{
+  margin-bottom: 8px;
+    margin-top: 8px;
+
+    font-style: italic;
+    /*  color: #494848; !* Adjust this value to set the desired color for the author names *!*/
+  color: #666666;
+}
+.publication-venue{
+  font-size: 17px; /* Adjust this value to set the font size of the publication details */
+  /*font-style: italic;*/
+    margin-bottom: 8px;
+  font-weight: bold;
+
+}
+
+
+
