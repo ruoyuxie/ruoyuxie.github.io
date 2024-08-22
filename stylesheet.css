@@ -70,7 +70,7 @@ a {
 
 a:focus,
 a:hover {
-  color: #f09228;
+  color: #e57c13;
   text-decoration: none;
 }
 
@@ -347,4 +347,95 @@ table {
     /*margin-left: -90px;*/
   margin-bottom: 12px;
 
+}
+
+
+.badge-link.website {
+  background-color: #d70606;
+}
+
+.badge-link.paper {
+  background-color: #0551c7;
+}
+
+.badge-link.code {
+  background-color: #e85604;
+}
+
+/* Updated styles for section titles and separators */
+h2 {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Adjusted publication entry spacing */
+.publication-entry {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+
+/* Badge-like style for links */
+.badge-link {
+  display: inline-block;
+  padding: 4px 8px;
+  margin-right: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.badge-link:hover {
+  opacity: 0.9;
+}
+
+.badge-link.website {
+  background-color: #b60101;
+}
+
+.badge-link.paper {
+  background-color: #043a8d;
+}
+
+.badge-link.code {
+  background-color: #ef8041;
+}
+
+/* Conference styles */
+.conference-badge {
+  display: inline-block;
+  padding: 3px 6px;
+  margin-right: 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Social media icon colors */
+.social-link .fa,
+.social-link .fab,
+.social-link .fa-brands {
+  color: black;
+  font-size: 18px;
+}
+
+/* Maintain link colors */
+.social-link {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  color: #f09228;
+  text-decoration: underline;
+}
+
+/* Update this in your existing CSS file */
+img[alt="profile photo"] {
+  border-radius: 50%; /* Ensures the image is circular if it wasn't already */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  /* Increased blur radius for a softer effect, reduced opacity for a lighter shadow */
 }
