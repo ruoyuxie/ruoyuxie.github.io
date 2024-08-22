@@ -187,26 +187,12 @@ h2 {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 33px; /* Increased from 32px */
 }
+
 .social-link {
     /*color: rgba(0,4,15,0.78); !* Set the color to black *!*/
     text-decoration: none; /* Optional: removes underline from links */
 }
 
-.social-link:hover {
-    text-decoration: underline; /* Optional: underline on hover for better UX */
-}
-
-.social-link .fa {
-    font-size: 18px; /* Adjust the size as needed */
-}
-.social-link .fab {
-    font-size: 18px; /* Adjust the size as needed */
-}
-
-.social-link span {
-    margin-left: 5px; /* Space between icon and text */
-    font-size: 18px; /* Adjust the size as needed */
-}
 
 
 body,
