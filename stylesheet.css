@@ -335,18 +335,6 @@ table {
 
 }
 
-.badge-link.website {
-  background-color: #0551c7;
-}
-
-.badge-link.paper {
-  background-color: #d70606 ;
-}
-
-.badge-link.code {
-  background-color: #e85604;
-}
-
 /* Updated styles for section titles and separators */
 h2 {
   border-bottom: 1px solid #f0f0f0;
@@ -377,11 +365,11 @@ h2 {
 }
 
 .badge-link.website {
-  background-color: #b60101;
+  background-color: #043a8d;
 }
 
 .badge-link.paper {
-  background-color: #043a8d;
+  background-color: #b60101;
 }
 
 .badge-link.code {
