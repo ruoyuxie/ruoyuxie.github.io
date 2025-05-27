@@ -336,11 +336,11 @@ table {
 }
 
 .badge-link.website {
-  background-color: #d70606;
+  background-color: #0551c7;
 }
 
 .badge-link.paper {
-  background-color: #0551c7;
+  background-color: #d70606 ;
 }
 
 .badge-link.code {
