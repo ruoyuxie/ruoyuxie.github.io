@@ -144,9 +144,9 @@ body {
   /*transform: scale(1);*/
   justify-content: center;
   align-items: center;
-  height: 5vh;
-transform-origin: center;
-overflow-x:hidden;
+  min-height: 100vh;
+  transform-origin: center;
+  overflow-x: hidden;
 }
 
 li:not(:last-child) {
