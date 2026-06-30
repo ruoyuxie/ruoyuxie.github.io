@@ -367,9 +367,16 @@
             <div style="text-align:center; margin: 40px 0 20px;">
                 <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&w=180&t=n&d=iSGBULnS_T4QY4wKjtM4eqUXWiN1FVHjbneu_4QZRgs&co=ffffff&ct=ffffff&cmo=ffffff&cmn=ffffff'></script>
                 <style>
-                    #mapmyvisitors-widget .jvectormap-zoomin,
-                    #mapmyvisitors-widget .jvectormap-zoomout {
-                        display: none !important;
+                    #mapmyvisitors-widget .mapmyvisitors-map::after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 50%;
+                        height: 100%;
+                        background: #fff;
+                        pointer-events: none;
+                        z-index: 9999;
                     }
                 </style>
             </div>
