@@ -11,6 +11,7 @@ footer .visitor-stats { color: inherit; }
 /* Keep the visitor counter active with a single, invisible pixel below the footer. */
 .visitor-map { width: 1px; height: 1px; overflow: hidden; margin: 0 auto; background: var(--bg); pointer-events: none; }
 .visitor-map #mapmyvisitors-widget { opacity: 0; }
+.hero > div:first-child { position: relative; top: 16px; }
 @media (min-width: 721px) {
   .hero > div:first-child { flex: 0 1 420px; min-width: 0; }
   .hero .photo { position: relative; left: -40px; top: 14px; }
