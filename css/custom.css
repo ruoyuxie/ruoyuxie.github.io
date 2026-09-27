@@ -1,0 +1,126 @@
+/* The unmodified base stylesheet and Scholar/GitHub icons come from
+   https://www.cs.princeton.edu/~danqic/ .
+   Personal content adjustments and keyboard accessibility. */
+:root {
+  --accent: #4b6580;
+  --link-hover: #334b65;
+}
+/* Single-page profile, with larger names and the original round portrait. */
+.wrap { width: 100%; margin-inline: auto; }
+footer .visitor-stats { color: inherit; }
+/* Keep the visitor counter active with a single, invisible pixel below the footer. */
+.visitor-map { width: 1px; height: 1px; overflow: hidden; margin: 0 auto; background: var(--bg); pointer-events: none; }
+.visitor-map #mapmyvisitors-widget { opacity: 0; }
+@media (min-width: 721px) {
+  .hero > div:first-child { flex: 0 1 420px; min-width: 0; }
+  .hero .photo { position: relative; left: -40px; top: 14px; }
+}
+.hero h1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  font-size: 64px;
+  margin-bottom: 26px;
+}
+.english-name { white-space: nowrap; }
+.hero h1 .cn-img { height: 60px; margin-left: 0; }
+.hero .role { margin-bottom: 6px; }
+.hero .photo a { position: relative; display: block; }
+.hero .photo .portrait { width: 320px; height: 320px; border-radius: 50%; }
+.hero .photo .portrait-canvas { position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 50%; pointer-events: none; }
+.hero .photo .portrait-rendered .portrait { opacity: 0; }
+@media (max-width: 720px) {
+  .hero h1 { font-size: 52px; }
+  .hero h1 .cn-img { height: 48px; }
+  .hero .photo { display: flex; justify-content: center; }
+  .hero .photo a { display: block; width: 100%; max-width: 350px; }
+  .hero .photo .portrait { width: 100%; max-width: 350px; height: auto; aspect-ratio: 1; }
+}
+@media (max-width: 380px) {
+  .hero h1 { font-size: 46px; }
+  .hero h1 .cn-img { height: 42px; }
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 20px;
+  z-index: 1;
+  padding: 8px 16px;
+  background: var(--bg);
+}
+.skip-link:focus { top: 12px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+
+/* Warm, subtle emphasis for selected introduction links. */
+.bio a {
+  color: #805a42;
+  border-bottom-color: #d7c5b8;
+  background: linear-gradient(transparent 66%, rgba(181, 84, 28, .09) 66%);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.bio a:hover, .bio a:focus-visible {
+  color: #68442e;
+  border-bottom-color: #aa8063;
+  background: linear-gradient(transparent 66%, rgba(181, 84, 28, .16) 66%);
+}
+
+/* Compact previews and text controls, inspired by Weili Cao's research page. */
+.recent-papers > li {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+  padding: 24px 0;
+}
+.recent-papers .publication-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 4px;
+  object-fit: contain;
+}
+.recent-papers .publication-details { min-width: 0; }
+.recent-papers .authors { color: #707780; font-size: 15.5px; line-height: 1.5; margin-top: 5px; }
+.recent-papers .authors strong { color: var(--text); font-weight: 700; }
+.recent-papers .venue { margin-top: 6px; color: #68717b; line-height: 1.4; }
+.recent-papers .venue strong { color: #333; font-weight: 700; }
+.paper-links { display: flex; flex-wrap: wrap; align-items: center; row-gap: 6px; margin-top: 10px; }
+.paper-links a, .paper-links button {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 12px;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  color: var(--accent);
+  font: 600 15px/1.5 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  cursor: pointer;
+}
+.paper-links > :first-child { padding-left: 0; }
+.paper-links > :last-child { padding-right: 0; }
+.paper-links > :not(:last-child) { border-right: 1px solid #d8dee4; }
+.paper-links a:hover, .paper-links button:hover, .paper-links button[aria-expanded="true"] {
+  color: var(--link-hover);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.paper-links button:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.model-downloads { margin-left: 6px; color: #707780; font-size: 12px; font-weight: 400; white-space: nowrap; }
+.paper-extra { margin-top: 14px; font-size: 15px; line-height: 1.6; }
+.paper-extra[hidden] { display: none; }
+.paper-citation { padding: 14px; border: 1px solid #e2e7ec; border-radius: 4px; background: #f5f7f9; }
+.paper-citation pre { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+.paper-citation code { font: 12.5px/1.6 "SF Mono", Menlo, Consolas, monospace; }
+@media (min-width: 601px) and (max-width: 860px) {
+  .recent-papers > li { grid-template-columns: 170px minmax(0, 1fr); }
+}
+@media (max-width: 600px) {
+  .recent-papers > li { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .recent-papers .publication-image { max-width: 220px; }
+  .paper-links a, .paper-links button { padding-inline: 9px; font-size: 14px; }
+  .paper-links > :first-child { padding-left: 0; }
+  .paper-links > :last-child { padding-right: 0; }
+}
