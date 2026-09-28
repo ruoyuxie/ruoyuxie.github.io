@@ -14,7 +14,7 @@ footer .visitor-stats { color: inherit; }
 .hero > div:first-child { position: relative; top: 16px; }
 @media (min-width: 721px) {
   .hero > div:first-child { flex: 0 1 420px; min-width: 0; }
-  .hero .photo { position: relative; left: -40px; top: 14px; }
+  .hero .photo { position: relative; left: -10px; top: 14px; }
 }
 .hero h1 {
   display: flex;
