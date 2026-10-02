@@ -85,6 +85,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 }
 .recent-papers .publication-details { min-width: 0; }
 .recent-papers .authors { color: #707780; font-size: 15.5px; line-height: 1.5; margin-top: 5px; }
+.recent-papers .author-name { white-space: nowrap; }
 .recent-papers .authors strong { color: var(--text); font-weight: 700; }
 .recent-papers .venue { margin-top: 6px; color: #68717b; line-height: 1.4; }
 .recent-papers .venue strong { color: #333; font-weight: 700; }
