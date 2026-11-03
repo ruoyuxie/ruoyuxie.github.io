@@ -58,27 +58,8 @@
     <h2 id="recent-publications">Recent Publications</h2>
     <ul class="papers recent-papers">
       <li id="rethink-mopd">
-        <svg class="publication-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 250" width="380" height="250" role="img" aria-labelledby="rethink-mopd-image-title rethink-mopd-image-desc">
-          <title id="rethink-mopd-image-title">SFT and MOPD achieve comparable accuracy with different training costs</title>
-          <desc id="rethink-mopd-image-desc">For Qwen3-8B, MOPD uses 14.8 times SFT's full-run training GPU-hours on MIA and 23.1 times on Agent×3. These costs exclude teacher-corpus generation and evaluation.</desc>
-          <!-- Training-cost ratios from arXiv:2610.04272, Section 5.2. Bar lengths are relative to SFT; the lighter segment shows the range across the two settings. -->
-          <rect x="1" y="1" width="378" height="248" rx="12" fill="#f8fafb" stroke="#e2e8ed"/>
-          <g font-family="Inter, Arial, sans-serif">
-            <text x="190" y="57" text-anchor="middle" font-size="32" font-weight="600"><tspan fill="#4b6f88">SFT</tspan><tspan fill="#8c969f">&#x2009;≈&#x2009;</tspan><tspan fill="#a37359">MOPD</tspan></text>
-            <text x="190" y="86" text-anchor="middle" font-size="18" fill="#66727d">Comparable accuracy</text>
-            <path d="M28 106H352" stroke="#e0e6eb"/>
-            <g font-size="18" font-weight="500">
-              <text x="28" y="138" fill="#4b6f88">SFT</text>
-              <text x="352" y="138" text-anchor="end" fill="#4b6f88">1×</text>
-              <text x="28" y="189" fill="#a37359">MOPD</text>
-              <text x="352" y="189" text-anchor="end" fill="#a37359">14.8–23.1×</text>
-            </g>
-            <rect x="28" y="150" width="14.03" height="9" rx="4.5" fill="#5e819a"/>
-            <rect x="28" y="201" width="324" height="9" rx="4.5" fill="#e4cdbf"/>
-            <path d="M32.5 201H235.58V210H32.5A4.5 4.5 0 0 1 28 205.5A4.5 4.5 0 0 1 32.5 201Z" fill="#b28368"/>
-            <text x="190" y="236" text-anchor="middle" font-size="15" fill="#66727d">Training GPU-hours · relative to SFT</text>
-          </g>
-        </svg>
+        <!-- Original accuracy–compute panels from Figure 3, arXiv:2610.04272v1. -->
+        <img class="publication-image" src="images/projects/rethink-mopd.svg" width="500" height="274" alt="Qwen3-8B validation accuracy versus training GPU-hours on MIA and Agent×3. Off-policy methods reach similar accuracy with less training compute than MOPD." loading="lazy">
         <div class="publication-details">
           <div class="title"><a href="https://arxiv.org/pdf/2610.04272">Rethinking Self-Distillation for Multi-Teacher Capability Merging</a></div>
           <div class="authors"><span class="author-name"><strong>Roy Xie</strong></span>, <span class="author-name">Dan Friedman</span>, <span class="author-name">Feng Nan</span>, <span class="author-name">Yukun Huang</span>, <span class="author-name">Zhichao Xu</span>, <span class="author-name">Chengjiu Zhang</span>, <span class="author-name">Jun Xu</span>, <span class="author-name">Manaal Faruqui</span>, <span class="author-name">Vivek Rathod</span>, <span class="author-name">Bhuwan Dhingra</span></div>
